@@ -1,0 +1,42 @@
+.howitworks {
+  & .hiw__title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 37.68px; 
+
+    color: $black;
+  }
+  & .hiwtext__box{
+     display: flex;
+     justify-content: space-between;
+  }
+  & .h2 {
+    display: block;
+    
+    color: $lgreen;
+
+    font-family: $font-accent;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+
+    max-width: 584px;
+    max-height: 185px;
+
+  } & .text__box-main{
+    display: block;
+
+    font-family: $font-main;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+
+    line-height: 31.4px;
+
+    max-width: 400px;
+    max-height: 135px;
+
+    padding-top: 23px;
+  }
+}
