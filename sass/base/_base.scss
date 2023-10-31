@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
-
 /* Main */
 
 body{
     margin: 0;
     background-color: #fff;
-    font-family: $font-main;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -21,4 +19,14 @@ a {
     &:hover {
         color: $lgreen;
     }
+}
+
+.mtext{
+    font-family: $font-main;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31.4px;
+
+    color: $dgrey;
 }
