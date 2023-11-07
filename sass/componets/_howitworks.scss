@@ -28,7 +28,6 @@
     display: block;
     width: 671px;
     height: 269px;
-
     padding-top: 23px;
 
   } & .hiwcard__box{
@@ -36,15 +35,43 @@
     justify-content: space-between;
 
   } & .hiwcard__inner {
-    display: block;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
     width: 390px;
-    height: 937px;
+    min-height: 937px;
 
-  } & .card__title {
+  } & .inner__cardbox-two{
+    position: absolute;
+    top: 204px; 
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
-  }& .h3 {
+    width: 390px;
+    min-height: 937px;
+
+  } & .inner__cardbox-three{
+    position: absolute;
+    top: 54px; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    width: 390px;
+    min-height: 937px;
+    
+  }
+  & .card__title {
+    position: relative;
+
+  } & .h3 {
+ 
     color: rgba(1, 153, 109, 0.20);
 
     font-family: $font-accent;
@@ -52,13 +79,24 @@
     font-style: normal;
     font-weight: 400;
 
-  } & .title__text{
-
+  } & .title__text-one, .title__text-two, .title__text-three{
+    position: absolute;
     font-family: $font-accent;
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
 
+  } & .title__text-one {
+    left: 100px;
+    top: 115px;
 
-  } 
+  }  & .title__text-two {
+    left: 50px;
+    top: 115px;
+
+  } & .title__text-three {
+    left: 120px;
+    top: 115px;
+  }
+  
 }

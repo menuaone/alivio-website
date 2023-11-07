@@ -302,9 +302,54 @@ header .button-box .trial:visited {
           justify-content: space-between;
 }
 .howitworks .hiwcard__inner {
-  display: block;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 390px;
-  height: 937px;
+  min-height: 937px;
+}
+.howitworks .inner__cardbox-two {
+  position: absolute;
+  top: 204px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 390px;
+  min-height: 937px;
+}
+.howitworks .inner__cardbox-three {
+  position: absolute;
+  top: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 390px;
+  min-height: 937px;
+}
+.howitworks .card__title {
+  position: relative;
 }
 .howitworks .h3 {
   color: rgba(1, 153, 109, 0.2);
@@ -313,9 +358,83 @@ header .button-box .trial:visited {
   font-style: normal;
   font-weight: 400;
 }
-.howitworks .title__text {
+.howitworks .title__text-one, .howitworks .title__text-two, .howitworks .title__text-three {
+  position: absolute;
   font-family: "Georgia", serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
+}
+.howitworks .title__text-one {
+  left: 100px;
+  top: 115px;
+}
+.howitworks .title__text-two {
+  left: 50px;
+  top: 115px;
+}
+.howitworks .title__text-three {
+  left: 120px;
+  top: 115px;
+}
+
+.video {
+  margin-top: 250px;
+  background-color: #245852;
+}
+.video .video__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 215px 0;
+}
+.video .h2 {
+  display: block;
+  color: #fff;
+  font-family: "Georgia", serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  max-width: 584px;
+  max-height: 185px;
+  margin-bottom: 33px;
+}
+.video .text__box {
+  color: #fff;
+  margin-bottom: 33px;
+}
+.video .video__btn {
+  padding: 13px 50px;
+  border: 1px solid #01996D;
+  border-radius: 4px;
+  background-color: #01996D;
+  color: #fff;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.video .video__btn:hover {
+  background-color: #fff;
+  border-color: #01996D;
+  color: #01996D;
+}
+.video .video__btn:active {
+  background-color: #01996D;
+  border-color: #fff;
+  color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.video .video__btn:focus, .video .video__btn:active:focus {
+  background-color: #01996D;
+  border-color: #01996D;
+  color: #fff;
+}
+.video .video__btn:visited {
+  background-color: #01996D;
+  border-color: #fff;
 }
