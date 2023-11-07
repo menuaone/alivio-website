@@ -1,0 +1,27 @@
+footer {
+    background-color: $dgreen;
+    
+    padding-top: 90px;
+    padding-bottom: 140px;
+
+    & .footer__inner{
+        display: flex;
+        flex-direction: column;
+
+        row-gap: 60px;
+
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+
+       
+    } & .footer__logo{
+        margin-bottom: 60px;
+    }
+    & a {
+        color: $white;
+
+    } & .footer__link:hover {
+        color: $lgreen;
+    }
+}
