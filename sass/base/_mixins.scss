@@ -31,3 +31,45 @@
           border-color: $color_2;
       }
   }
+
+  // 1350
+  @mixin mediaStart{
+    @media screen and (max-width: $start) {
+        @content;
+        }
+  }
+
+  //  990
+  @mixin mediaTablet{
+    @media screen and (max-width: $tablet) {
+        @content;
+        }
+  }
+
+   //  768
+   @mixin mediaSTablet{
+    @media screen and (max-width: $stablet) {
+        @content;
+        }
+  }
+
+   //  576
+   @mixin mediaXSTablet{
+    @media screen and (max-width: $xstablet) {
+        @content;
+        }
+  }
+
+   //  440
+   @mixin mediaPhoneMax{
+       @media screen and (max-width: $phonemax) {
+           @content;
+           }
+  }
+
+  //  330
+  @mixin mediaPhones{
+    @media screen and (max-width: $phones) {
+        @content;
+        }
+}

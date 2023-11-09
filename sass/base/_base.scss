@@ -11,6 +11,24 @@ body{
     max-width: 1920px;
     margin: 0 auto;
     padding: 0 175px;
+
+    @include mediaStart{
+        padding: 0 100px;
+    }
+
+    @include mediaTablet {
+        padding: 0 70px;
+    }
+
+    @include mediaSTablet{
+        padding: 0 50px;
+      }
+
+      @include mediaPhoneMax{
+        padding: 0 20px;
+      }
+
+    
 }
 
 a {

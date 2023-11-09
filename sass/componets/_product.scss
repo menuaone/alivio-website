@@ -7,15 +7,87 @@
 
 
         padding: 120px 0 240px 0;
+
+        @include mediaTablet{
+            padding: 120px 0 120px 0;
+        }
+
+        @include mediaXSTablet{
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            padding: 80px 0 80px 0;
+          }
+     
     }
+
     & .product__img-box{
         position: relative;
     }
+
+    & .prodcard__img-main{
+        max-width: 639px;
+        max-height: 574px;
+
+        @include mediaStart{
+            width: 445px;
+            height: 400px;
+        }
+
+        @include mediaTablet{
+            width: 330px;
+            height: 300px;
+        }
+
+        @include mediaPhones{
+            width: 240px;
+            height: 220px;
+          }
+    }
+
     & .prodcard__img{
         position: absolute;
         top: 340px;
         right: 390px;
 
+        width: 296px;
+        height: 293px;
+
+        @include mediaStart{
+            top: 250px;
+            right: 200px;
+        }
+
+        @include mediaTablet{
+            top: 170px;
+            right: 160px;
+
+            width: 226px;
+            height: 221px;
+        }
+
+        @include mediaPhones{
+            top: 150px;
+            right: 30px;
+
+            width: 170px;
+            height: 165px;
+          }
+
+    }
+
+    & .product__text-box{
+        @include mediaStart{
+          padding-top: 100px;
+        }
+
+        @include mediaTablet{
+            padding: 0;
+        }
+
+        @include mediaXSTablet{
+            padding-top: 120px;
+          }
     }
     & .product__title{
         font-size: 24px;
@@ -26,6 +98,10 @@
         color: $dgrey;
 
         margin-bottom: 10px;
+
+        @include mediaTablet{
+            font-size: 15px;
+        }
 
     } & .h2{
     display: block;
@@ -42,6 +118,13 @@
     
     margin-bottom: 20px;
 
+    @include mediaTablet{
+        font-size: 25px;
+        max-width: 300px;
+    }
+
+
+
     } & .product__box{
         margin-bottom: 40px;
 
@@ -50,6 +133,11 @@
 
         width: 530px;
         height: 81px;
+
+        @include mediaTablet{
+        font-size: 15px;
+        width: 300px;
+    }
 
     }  & .product__btn {
         @include mybutton($lgreen, $white);

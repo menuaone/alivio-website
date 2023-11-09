@@ -9,6 +9,21 @@
         align-items: center;
 
         padding: 215px 0;
+
+        @include mediaTablet{
+            padding: 150px 0;
+          }
+
+          @include mediaSTablet{
+            padding: 90px 0;
+          }
+
+          @include mediaXSTablet{
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+          }
+
+         
     }
     & .h2{
     display: block;
@@ -25,12 +40,68 @@
     
     margin-bottom: 33px;
 
+    @include mediaTablet{
+        max-width: 400px;
+      }
+
+      @include mediaSTablet{
+        font-size: 30px;
+        max-width: 300px;
+
+        margin-bottom: 15px;
+      }
+
     } & .text__box{
         color: $white;
         margin-bottom: 33px;
 
+        @include mediaTablet{
+            max-width: 400px;
+          }
+
+          @include mediaSTablet{
+            font-size: 15px;
+
+            width: 300px;
+
+            margin-bottom: 15px;
+        }
+
     }  & .video__btn {
         @include mybutton($lgreen, $white);
     }
+}
+
+.vdo {
+    width: 895px;
+    height: 516px;
+
+    @include mediaStart{
+        width: 595px;
+        height: 350px;
+      }
+
+      @include mediaTablet{
+        width: 430px;
+        height: 250px;
+      }
+
+      @include mediaSTablet{
+        width: 320px;
+        height: 250px;
+      }
+
+      @include mediaPhoneMax{
+        width: 320px;
+        height: 250px;
+        padding-top: 50px;
+      }
+
+      @include mediaPhones{
+        width: 260px;
+        height: 250px;
+        padding-top: 50px;
+      }
+
 
 }

@@ -1,10 +1,18 @@
 .screen {
   min-height: 895px;
   background-image: url(../..//resources/BG.png);
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
 
-  margin-bottom: 154px;
+  margin-bottom: 110px;
+
+  @include mediaXSTablet{
+    background-position: 45% 50%;
+  }
+
+  @include mediaPhoneMax{
+    background-position: 50% 50%;
+  }
 
   & .screen__text{
     max-width: 440px;
@@ -12,6 +20,11 @@
 
     padding-top: 175px;
   }  
+
+  @include mediaPhoneMax{
+    padding-top: 120px;
+  }
+
   & .screen__title {
     color: $lgreen;
 
@@ -21,6 +34,21 @@
     font-weight: 700;
 
     margin-bottom: 30px;
+
+    @include mediaXSTablet{
+      font-size: 30px;
+      max-width: 300px;
+
+      margin-bottom: 15px;
+    }
+
+    @include mediaPhoneMax{
+      font-size: 40px;
+    }
+
+    @include mediaPhoneMax{
+      font-size: 30px;
+    }
   }
   & .text__box-main {
     font-family: $font-main;
@@ -31,8 +59,43 @@
     line-height: 31.4px;
 
     margin-bottom: 18px;
+
+    @include mediaSTablet{
+      font-size: 15px;
+
+      width: 300px;
+
+      margin-bottom: 15px;
+  }
+
+    @include mediaPhoneMax{
+      line-height: 20px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    @include mediaPhones{
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 700;
+
+      width: 260px;
+
+      margin-bottom: 20px;
+    }
+
+
   }
   & .screen__btn {
     @include mybutton($lgreen, $white);
+
+    @include mediaSTablet{
+      padding: 8px 30px;
+  }
+
 }
+
+  @include mediaStart{
+    min-height: 651px;
+  }
 }

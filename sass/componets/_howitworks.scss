@@ -10,6 +10,11 @@
   & .hiwtext__box{
      display: flex;
      justify-content: space-between;
+
+     @include mediaXSTablet{
+      flex-wrap: wrap;
+    } 
+
   }
   & .h2 {
     display: block;
@@ -24,15 +29,53 @@
     max-width: 584px;
     max-height: 185px;
 
-  } & .text__box{
+    @include mediaTablet{
+      width: 450px;
+    }
+
+    @include mediaXSTablet{
+      font-size: 35px;
+      max-width: 300px;
+    } 
+
+
+  }
+  & .text__box{
     display: block;
     width: 671px;
-    height: 269px;
-    padding-top: 23px;
+    max-height: 269px;
+
+    
+
+
+    @include mediaStart{
+      width: 500px;
+    }
+
+    @include mediaTablet{
+      width: 400px;
+    }
+
+    @include mediaXSTablet{
+      font-size: 20px;
+      max-width: 500px;
+
+      padding-top: 20px;
+
+    } 
+
 
   } & .hiwcard__box{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include mediaSTablet{
+      justify-content: space-evenly;
+    }
+
+
+
 
   } & .hiwcard__inner {
     position: relative;
@@ -55,6 +98,23 @@
     width: 390px;
     min-height: 937px;
 
+    @include mediaTablet{
+      top: 350px; 
+    }
+
+    @include mediaSTablet{
+      top: 10px; 
+      
+    }
+    
+    @include mediaPhoneMax{
+      width: 330px;
+    }
+
+    @include mediaPhones{
+      width: 280px;
+    }
+
   } & .inner__cardbox-three{
     position: absolute;
     top: 54px; 
@@ -66,6 +126,13 @@
     width: 390px;
     min-height: 937px;
     
+    @include mediaPhoneMax{
+      width: 330px;
+    }
+
+    @include mediaPhones{
+      width: 280px;
+    }
   }
   & .card__title {
     position: relative;

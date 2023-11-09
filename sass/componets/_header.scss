@@ -2,7 +2,7 @@ header {
 
     display: inline-block;
     width: 100%;
-    min-height: 87px;
+    max-height: 87px;
 
     & .header__inner{
         display: flex;
@@ -10,18 +10,36 @@ header {
         align-items: center;
 
         padding: 17px 0;
-    } & nav {
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
+    } 
+    
+}
+
+nav {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    & .nav__list {
+        display: flex;
+        column-gap: 72px;
+    }
       
-          & .nav__list {
-              display: flex;
-              column-gap: 72px;
-          }
-          
-    } & .button-box{
+    @include mediaStart{
+        display: none;
+    }
+} 
+    
+
+.header__nav-btn{
+    display: none;
+
+    @include mediaStart{
+        display: block;
+    }
+}
+
+.button-box{
         & .sighin{
             padding-right: 35px;
             background-color: $white;
@@ -30,6 +48,8 @@ header {
         & .trial {
             @include mybutton($lgreen, $white);
         }
-    }
 
-}
+        @include mediaStart{
+            display: none;
+        }
+    }
