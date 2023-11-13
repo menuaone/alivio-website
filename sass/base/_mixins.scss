@@ -32,6 +32,37 @@
       }
   }
 
+@mixin mybutton2($color_1, $color_2) {
+    padding: 13px 50px;
+    border: 1px solid $color_1;
+    border-radius: 4px;
+    background-color: $color_1;
+
+    color: $color_2;
+    transition: $transition;
+
+      &:hover {
+          background-color:  $color_1;
+          border-color: $color_2;
+          color: $color_2;
+      }
+      &:active {
+          background-color: $color_1;
+          border-color: $color_2;
+          color: $color_2;
+          box-shadow: none;
+      }
+      &:focus, &:active:focus {
+          background-color: $color_1;
+          border-color: $color_1;
+          color: $color_2;
+      }
+      &:visited {
+          background-color: $color_1;
+          border-color: $color_2;
+      }
+  }
+
   // 1350
   @mixin mediaStart{
     @media screen and (max-width: $start) {
